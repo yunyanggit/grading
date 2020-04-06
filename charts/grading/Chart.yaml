@@ -1,4 +1,4 @@
 apiVersion: v1
 description: A Helm chart for Kubernetes
-name: jenkinsx-tutorial
+name: grading
 version: v0.1.0
