@@ -1,0 +1,37 @@
+
+Showing logs for build [32myunyanggit-grading-master-8blbg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-mpqnt[0m
+{"level":"warn","ts":1586141694.9816663,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586141694.9819784,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32myunyanggit-grading-master-8blbg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-g2g9z[0m
+{"level":"warn","ts":1586141695.282656,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1586141695.283728,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32myunyanggit-grading-master-8blbg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32myunyanggit-grading-master-8blbg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-yunyanggit-grading-master-8blbg-c87jb[0m
+{"level":"warn","ts":1586141700.321954,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1586141700.5381548,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/**********/grading.git @ v0.0.2 in path /workspace/source"}
+
+Showing logs for build [32myunyanggit-grading-master-8blbg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:b76c6cfaadd5b120e19d66f447227cc8f168a233
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32myunyanggit-grading-master-8blbg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32myunyanggit-grading-master-8blbg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-python-unittest[0m
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.000s
+
+OK
+
+Showing logs for build [32myunyanggit-grading-master-8blbg-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0000] Downloading base image python:onbuild        
+[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:43780a8431c53f4afd734ad795e03127c0c607337a60639c5903a51a03535c22: no such file or directory 
+[36mINFO[0m[0000] Downloading base image python:onbuild        
+error building image: error building stage: lstat /workspace/source/requirements.txt: no such file or directory
+[36mINFO[0m[0000] Executing 3 build triggers                   
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
